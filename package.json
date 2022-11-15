@@ -1,11 +1,11 @@
 {
   "name": "rest-data-mapping-picklist",
-  "version": "0.4.0",
+  "version": "0.4.23",
   "description": "An Azure DevOps Work Item Control for loading values from a Rest endpoint",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dedac/RestDataMappingPicklist"
+    "url": "https://github.com/dbloch3643/RestDataMappingPicklist"
   },
   "scripts": {
     "build-dev": "webpack --mode=development",
@@ -21,9 +21,11 @@
     "lint": "eslint ."
   },
   "keywords": [],
-  "author": "Richard Goforth",
+  "author": "Doug Bloch",
   "license": "ISC",
   "dependencies": {
+    "@types/jsonpath": "^0.2.0",
+    "@types/lodash.flattendeep": "^4.4.7",
     "axios": "^0.24.0",
     "azure-devops-extension-api": "^1.158.0",
     "azure-devops-extension-sdk": "^2.0.11",
@@ -50,6 +52,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jsonpath": "^1.1.1",
     "jszip": "^3.7.1",
     "prettier": "^2.4.1",
     "source-map-loader": "^4.0.0",

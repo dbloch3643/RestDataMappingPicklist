@@ -1,4 +1,12 @@
 # Rest Data Mapping Picklist
+
+#### Forked from [Dedac](https://github.com/Dedac/RestDataMappingPicklist)
+
+#### Changes
+1. Changed from field query to jsonpath query, find it more flexible.
+2. Don't show error message if user removes the field value
+3. Only allow LOV to be from Azure Devops 
+
 #### An Azure DevOps Work Item Form Extension
 
 This is an extension for Azure DevOps to load Rest data into a simple picklist.

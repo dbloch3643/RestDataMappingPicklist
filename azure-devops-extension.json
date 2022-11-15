@@ -1,11 +1,11 @@
 {
     "manifestVersion": 1.0,
     "id": "RestDataMappingPicklist",
-    "publisher": "dedac",
-    "version": "0.4.0",
+    "publisher": "DougBloch",
+    "version": "0.4.23",
     "name": "Rest Data Mapping Picklist",
     "description": "Load work item values from a specified REST endpoint and map additional REST data to your work item",
-    "public": true,
+    "public": false,
     "icons": {
         "default": "img/Logo.png"
     },
@@ -19,7 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "uri": "https://github.com/Dedac/RestDataMappingPicklist"
+        "uri": "https://github.com/dbloch3643/RestDataMappingPicklist"
     },
     "tags": [
         "Work Items",
@@ -74,32 +74,14 @@
                     }
                 },
                 {
-                    "id": "RestServiceKeyField",
-                    "name": "Rest Service Key Field",
-                    "description": "Select the key field from the rest service that matches the control field",
+                    "id": "JsonPathQuery",
+                    "name": "JSON Path Query",
+                    "description": "path within the returned JSON data to find the array of items listed - often something like 'data.result'",
                     "validation": {
-                        "dataType": "String",
-                        "isRequired": true
+                      "isRequired": false,
+                      "dataType": "String"
                     }
-                },
-                {
-                  "id": "PathToArray",
-                  "name": "JSON Path to the Array",
-                  "description": "path within the returned JSON data to find the array of items listed - often something like 'data.result'",
-                  "validation": {
-                    "isRequired": false,
-                    "dataType": "String"
-                  }
-                }, 
-                {
-                    "id": "RestServiceUserName",
-                    "name": "Rest Service User Name / 'Bearer' / 'Basic'",
-                    "description": "The name of the property to load from the rest service, use 'Bearer' or 'Basic' for token auth",
-                    "validation": {
-                        "dataType": "String",
-                        "isRequired": false
-                    }
-                },
+                  },
                 {
                     "id": "RestServicePassword",
                     "name": "Rest Service Password / Token",
